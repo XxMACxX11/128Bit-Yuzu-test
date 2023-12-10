@@ -1,0 +1,181 @@
+[17:42:18][mostlywhat_yuzu_installer][INFO] 128Bit-Yuzu installer
+[17:42:18][mostlywhat_yuzu_installer][INFO] Starting fresh install
+[17:42:18][mostlywhat_yuzu_installer::frontend::rest::server][INFO] Spawning server instance @ [::1]:53183
+[17:42:18][mostlywhat_yuzu_installer::frontend::rest::server][INFO] Spawning server instance @ 127.0.0.1:53183
+[17:42:18][mostlywhat_yuzu_installer::frontend::ui][INFO] Spawning web view instance
+[17:42:19][mostlywhat_yuzu_installer::frontend::ui][INFO] Webview started
+[17:42:19][liftinstall::frontend::js][INFO] Vue started
+[17:42:19][mostlywhat_yuzu_installer::frontend::rest::services::config][INFO] Downloading configuration from "https://raw.githubusercontent.com/MostlyWhat/128Bit-Yuzu-Installer/main/config.windows.v5.toml"...
+[17:42:19][mostlywhat_yuzu_installer::frontend::rest::services::config][INFO] Configuration file downloaded successfully.
+[17:42:19][mostlywhat_yuzu_installer::frontend::rest::services::authentication][INFO] Handling authentication
+[17:42:19][mostlywhat_yuzu_installer::frontend::rest::services::authentication][INFO] No passed in credential and no stored credentials to validate
+[17:42:19][liftinstall::frontend::js][INFO] Next stop: "/packages"
+[17:42:29][liftinstall::frontend::js][INFO] Installer kind: regular
+[17:42:29][liftinstall::frontend::js][INFO] Installing desktop shortcut: true
+[17:42:29][liftinstall::frontend::js][INFO] Making streaming HTTP request to /api/start-install
+[17:42:29][mostlywhat_yuzu_installer::frontend::rest::services::install][INFO] Found installDesktopShortcut "true"
+[17:42:29][mostlywhat_yuzu_installer::installer][INFO] Framework: Installing ["128BitBay"] to "C:\\Users\\XxMAC\\AppData\\Local\\128Bit-Yuzu"
+[17:42:29][mostlywhat_yuzu_installer::installer][INFO] Dependency tree:
+InstallTask
+├── Pre EnsureOnlyInstanceTask
+├── Pre VerifyInstallDirTask (with clean-install = true)
+├── Pre InstallPackageTask (for "128BitBay")
+│   ├── Pre DownloadPackageTask (for "128BitBay")
+│   │   └── Pre CheckAuthorizationTask (for "128BitBay")
+│   │       └── Pre ResolvePackageTask (for "128BitBay")
+│   ├── Pre UninstallPackageTask (for "128BitBay", optional = true)
+│   │   ├── Pre UninstallShortcutsTask (for "128BitBay", optional = true)
+│   │   └── Post SaveDatabaseTask
+│   ├── Post InstallShortcutsTask (for "128BitBay")
+│   ├── Post InstallDesktopShortcutTask (for "128BitBay", should_run = true)
+│   └── Post SaveDatabaseTask
+├── Pre SaveExecutableTask
+├── Pre InstallGlobalShortcutsTask
+│   └── Post SaveDatabaseTask
+└── Post LaunchOnExitTask
+[17:42:30][mostlywhat_yuzu_installer::tasks::resolver][INFO] Selected file: File { name: "yuzu-early-access-EA3507.zip", url: "https://github.com/Kryptuq/Yuzu-Early-Access-files/releases/download/EA3507/yuzu-early-access-EA3507.zip", requires_authorization: false }
+[17:43:45][mostlywhat_yuzu_installer::frontend::rest::services::install][ERROR] Install error occurred: "Failed to read resource: Custom { kind: TimedOut, error: \"timed out\" }"
+[17:45:17][liftinstall::frontend::js][INFO] Installer kind: repair
+[17:45:17][liftinstall::frontend::js][INFO] Installing desktop shortcut: true
+[17:45:17][liftinstall::frontend::js][INFO] Making streaming HTTP request to /api/start-install
+[17:45:17][mostlywhat_yuzu_installer::frontend::rest::services::install][INFO] Found installDesktopShortcut "true"
+[17:45:17][mostlywhat_yuzu_installer::installer][INFO] Framework: Installing ["PineappleEA", "128BitBay"] to "C:\\Users\\XxMAC\\AppData\\Local\\128Bit-Yuzu"
+[17:45:17][mostlywhat_yuzu_installer::installer][INFO] Dependency tree:
+InstallTask
+├── Pre EnsureOnlyInstanceTask
+├── Pre RemoveTargetDirTask
+├── Pre VerifyInstallDirTask (with clean-install = true)
+├── Pre InstallPackageTask (for "PineappleEA")
+│   ├── Pre DownloadPackageTask (for "PineappleEA")
+│   │   └── Pre CheckAuthorizationTask (for "PineappleEA")
+│   │       └── Pre ResolvePackageTask (for "PineappleEA")
+│   ├── Pre UninstallPackageTask (for "PineappleEA", optional = true)
+│   │   ├── Pre UninstallShortcutsTask (for "PineappleEA", optional = true)
+│   │   └── Post SaveDatabaseTask
+│   ├── Post InstallShortcutsTask (for "PineappleEA")
+│   ├── Post InstallDesktopShortcutTask (for "PineappleEA", should_run = true)
+│   └── Post SaveDatabaseTask
+├── Pre InstallPackageTask (for "128BitBay")
+│   ├── Pre DownloadPackageTask (for "128BitBay")
+│   │   └── Pre CheckAuthorizationTask (for "128BitBay")
+│   │       └── Pre ResolvePackageTask (for "128BitBay")
+│   ├── Pre UninstallPackageTask (for "128BitBay", optional = true)
+│   │   ├── Pre UninstallShortcutsTask (for "128BitBay", optional = true)
+│   │   └── Post SaveDatabaseTask
+│   ├── Post InstallShortcutsTask (for "128BitBay")
+│   ├── Post InstallDesktopShortcutTask (for "128BitBay", should_run = true)
+│   └── Post SaveDatabaseTask
+├── Pre SaveExecutableTask
+├── Pre InstallGlobalShortcutsTask
+│   └── Post SaveDatabaseTask
+└── Post LaunchOnExitTask
+[17:45:18][mostlywhat_yuzu_installer::tasks::resolver][INFO] Selected file: File { name: "Windows-Yuzu-EA-4012.zip", url: "https://github.com/pineappleEA/pineapple-src/releases/download/EA-4012/Windows-Yuzu-EA-4012.zip", requires_authorization: false }
+[17:46:48][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating dir: "yuzu-windows-msvc-early-access"
+[17:46:48][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc-early-access\\avcodec-60.dll"
+[17:46:48][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc-early-access\\avfilter-9.dll"
+[17:46:48][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc-early-access\\avutil-58.dll"
+[17:46:48][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc-early-access\\boost_context-vc143-mt-x64-1_82.dll"
+[17:46:48][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc-early-access\\fmt.dll"
+[17:46:48][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc-early-access\\icudtl.dat"
+[17:46:48][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc-early-access\\libcrypto-3-x64.dll"
+[17:46:48][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc-early-access\\libssl-3-x64.dll"
+[17:46:48][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc-early-access\\libwinpthread-1.dll"
+[17:46:48][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc-early-access\\lz4.dll"
+[17:46:48][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating dir: "yuzu-windows-msvc-early-access\\mediaservice"
+[17:46:48][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc-early-access\\mediaservice\\dsengine.dll"
+[17:46:48][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc-early-access\\mediaservice\\wmfengine.dll"
+[17:46:48][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating dir: "yuzu-windows-msvc-early-access\\plugins\\imageformats"
+[17:46:48][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating dir: "yuzu-windows-msvc-early-access\\plugins"
+[17:46:48][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc-early-access\\plugins\\imageformats\\qgif.dll"
+[17:46:48][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc-early-access\\plugins\\imageformats\\qjpeg.dll"
+[17:46:48][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating dir: "yuzu-windows-msvc-early-access\\plugins\\platforms"
+[17:46:48][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc-early-access\\plugins\\platforms\\qwindows.dll"
+[17:46:48][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating dir: "yuzu-windows-msvc-early-access\\plugins\\styles"
+[17:46:48][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc-early-access\\plugins\\styles\\qwindowsvistastyle.dll"
+[17:46:48][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc-early-access\\qt.conf"
+[17:46:48][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc-early-access\\Qt5Core.dll"
+[17:46:48][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc-early-access\\Qt5Gui.dll"
+[17:46:48][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc-early-access\\Qt5Multimedia.dll"
+[17:46:48][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc-early-access\\Qt5Network.dll"
+[17:46:48][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc-early-access\\Qt5Positioning.dll"
+[17:46:48][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc-early-access\\Qt5PrintSupport.dll"
+[17:46:48][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc-early-access\\Qt5Qml.dll"
+[17:46:49][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc-early-access\\Qt5QmlModels.dll"
+[17:46:49][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc-early-access\\Qt5Quick.dll"
+[17:46:49][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc-early-access\\Qt5QuickWidgets.dll"
+[17:46:49][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc-early-access\\Qt5WebChannel.dll"
+[17:46:49][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc-early-access\\Qt5WebEngineCore.dll"
+[17:46:49][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc-early-access\\Qt5WebEngineWidgets.dll"
+[17:46:49][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc-early-access\\Qt5Widgets.dll"
+[17:46:49][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc-early-access\\QtWebEngineProcess.exe"
+[17:46:49][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc-early-access\\qtwebengine_devtools_resources.pak"
+[17:46:49][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc-early-access\\qtwebengine_resources.pak"
+[17:46:49][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc-early-access\\qtwebengine_resources_100p.pak"
+[17:46:49][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc-early-access\\qtwebengine_resources_200p.pak"
+[17:46:49][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc-early-access\\SDL2.dll"
+[17:46:49][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc-early-access\\swscale-7.dll"
+[17:46:49][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc-early-access\\yuzu-cmd.exe"
+[17:46:49][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc-early-access\\yuzu-room.exe"
+[17:46:50][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc-early-access\\yuzu-windows-msvc-source-20231209-63ed44fc8e.tar.xz"
+[17:46:50][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc-early-access\\yuzu.exe"
+[17:46:50][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc-early-access\\zlib1.dll"
+[17:46:50][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-windows-msvc-early-access\\zstd.dll"
+[17:46:50][mostlywhat_yuzu_installer::native::natives][INFO] Generating shortcut @ "C:\\Users\\XxMAC\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\yuzu Early Access (PineappleEA).lnk"
+[17:46:50][mostlywhat_yuzu_installer::native::natives][INFO] Generating shortcut @ "C:\\Users\\XxMAC\\Desktop\\yuzu Early Access (PineappleEA).lnk"
+[17:46:51][mostlywhat_yuzu_installer::tasks::resolver][INFO] Selected file: File { name: "yuzu-early-access-EA3507.zip", url: "https://github.com/Kryptuq/Yuzu-Early-Access-files/releases/download/EA3507/yuzu-early-access-EA3507.zip", requires_authorization: false }
+[17:48:11][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating dir: "yuzu-early-access"
+[17:48:12][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-early-access\\avcodec-58.dll"
+[17:48:12][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-early-access\\avutil-56.dll"
+[17:48:12][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-early-access\\boost_context-vc143-mt-x64-1_79.dll"
+[17:48:12][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-early-access\\dbghelp.dll"
+[17:48:12][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-early-access\\fmt.dll"
+[17:48:12][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-early-access\\icudtl.dat"
+[17:48:12][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-early-access\\libcrypto-3-x64.dll"
+[17:48:12][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-early-access\\libssl-3-x64.dll"
+[17:48:12][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-early-access\\libwinpthread-1.dll"
+[17:48:12][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-early-access\\lz4.dll"
+[17:48:12][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating dir: "yuzu-early-access\\mediaservice"
+[17:48:12][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-early-access\\mediaservice\\dsengine.dll"
+[17:48:12][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-early-access\\mediaservice\\wmfengine.dll"
+[17:48:12][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating dir: "yuzu-early-access\\plugins\\imageformats"
+[17:48:12][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating dir: "yuzu-early-access\\plugins"
+[17:48:12][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-early-access\\plugins\\imageformats\\qgif.dll"
+[17:48:12][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-early-access\\plugins\\imageformats\\qjpeg.dll"
+[17:48:12][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating dir: "yuzu-early-access\\plugins\\platforms"
+[17:48:12][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-early-access\\plugins\\platforms\\qwindows.dll"
+[17:48:12][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating dir: "yuzu-early-access\\plugins\\styles"
+[17:48:12][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-early-access\\plugins\\styles\\qwindowsvistastyle.dll"
+[17:48:12][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-early-access\\qt.conf"
+[17:48:12][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-early-access\\Qt5Core.dll"
+[17:48:12][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-early-access\\Qt5Gui.dll"
+[17:48:12][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-early-access\\Qt5Multimedia.dll"
+[17:48:12][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-early-access\\Qt5Network.dll"
+[17:48:12][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-early-access\\Qt5Positioning.dll"
+[17:48:12][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-early-access\\Qt5PrintSupport.dll"
+[17:48:12][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-early-access\\Qt5Qml.dll"
+[17:48:12][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-early-access\\Qt5QmlModels.dll"
+[17:48:12][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-early-access\\Qt5Quick.dll"
+[17:48:12][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-early-access\\Qt5QuickWidgets.dll"
+[17:48:12][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-early-access\\Qt5WebChannel.dll"
+[17:48:12][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-early-access\\Qt5WebEngineCore.dll"
+[17:48:13][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-early-access\\Qt5WebEngineWidgets.dll"
+[17:48:13][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-early-access\\Qt5Widgets.dll"
+[17:48:13][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-early-access\\qtwebengine_devtools_resources.pak"
+[17:48:13][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-early-access\\qtwebengine_resources.pak"
+[17:48:13][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-early-access\\qtwebengine_resources_100p.pak"
+[17:48:13][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-early-access\\qtwebengine_resources_200p.pak"
+[17:48:13][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-early-access\\QtWebEngineProcess.exe"
+[17:48:13][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-early-access\\SDL2.dll"
+[17:48:13][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-early-access\\swscale-5.dll"
+[17:48:13][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-early-access\\yuzu-cmd.exe"
+[17:48:13][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-early-access\\yuzu-room.exe"
+[17:48:13][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-early-access\\yuzu-windows-msvc-source-20230411-566fe1bf05.tar.xz"
+[17:48:13][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-early-access\\yuzu.exe"
+[17:48:13][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-early-access\\zlib1.dll"
+[17:48:13][mostlywhat_yuzu_installer::tasks::install_pkg][INFO] Creating file: "yuzu-early-access\\zstd.dll"
+[17:48:13][mostlywhat_yuzu_installer::native::natives][INFO] Generating shortcut @ "C:\\Users\\XxMAC\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\yuzu Early Access (128BitBay).lnk"
+[17:48:13][mostlywhat_yuzu_installer::native::natives][INFO] Generating shortcut @ "C:\\Users\\XxMAC\\Desktop\\yuzu Early Access (128BitBay).lnk"
+[17:48:13][mostlywhat_yuzu_installer::native::natives][INFO] Generating shortcut @ "C:\\Users\\XxMAC\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\128Bit-Yuzu Maintenance Tool.lnk"
+[17:48:25][mostlywhat_yuzu_installer::installer][INFO] Shutting down installer framework...
+[17:48:25][mostlywhat_yuzu_installer::installer][INFO] Launching "C:\\Users\\XxMAC\\AppData\\Local\\128Bit-Yuzu\\yuzu-windows-msvc-early-access/yuzu.exe"
+[17:48:25][mostlywhat_yuzu_installer::logging][ERROR] Fatal error: Failed to run HTTP server: Io(Os { code: 10093, kind: Uncategorized, message: "Either the application has not called WSAStartup, or WSAStartup failed." })
